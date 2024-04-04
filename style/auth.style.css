@@ -14,7 +14,7 @@ body {
 main {
   width: 100%;
   min-height: 100vh;
-  display: inline-flex;
+  display: flex;
   background-color: hsl(var(--background));
 }
 
@@ -73,7 +73,7 @@ main {
 }
 
 #auth-form {
-  width: 50%;
+  width: 100%; /* Lebar form diatur 100% agar bisa menyesuaikan lebar layar */
   background-color: hsl(var(--primary));
   color: hsl(var(--primary-foreground));
   padding: 2.5rem;
@@ -130,14 +130,18 @@ main {
   margin-bottom: 1.5rem;
 }
 
-#auth-form {
-  width: 70%;
-  padding: 3rem 6rem;
+@media (min-width: 768px) {
+  #auth-form {
+    width: 70%;
+    padding: 3rem 6rem;
+  }
 }
 
-#auth-form {
-  width: 50%;
-  padding: 4rem 8rem;
+@media (min-width: 1024px) {
+  #auth-form {
+    width: 50%;
+    padding: 4rem 8rem;
+  }
 }
 
 /* Form */
