@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: hsl(var(--background-foreground));
+  }
+  
+  main {
+    width: 100%;
+    min-height: 100vh;
+    display: inline-flex;
+    background-color: hsl(var(--background));
+  }
+  
+  #auth-hero {
+    max-width: 100%; 
+    position: relative;
+    display: block; 
+  }
+  
+  #auth-hero .background {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  #auth-hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 2rem;
+    color: hsl(var(--primary-foreground));
+    background-color: hsla(var(--primary), 0.7);
+    border-radius: 15px; 
+  }
+  
+  
+  #auth-hero .content .title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.6;
+  }
+  
+  #auth-hero .content .description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: hsl(var(--secondary)); 
+    color: hsl(var(--secondary-foreground));
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: hsl(var(--secondary-darkened));
+  }
+  
